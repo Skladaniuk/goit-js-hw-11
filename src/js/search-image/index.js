@@ -1,4 +1,4 @@
-import fetchImages from '../fetch-images';
+import fetchImages from './fetch-images';
 import cardsSearch from './cards-search.hbs';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
