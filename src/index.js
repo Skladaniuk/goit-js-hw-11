@@ -1,6 +1,7 @@
 import fetchImages from './fetch-images';
 import cardsSearch from './cards-search.hbs';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import './css/styles.css'
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
