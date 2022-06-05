@@ -32,12 +32,14 @@ searchForm.addEventListener('submit', onSubmitSearchForm);
 
 async function onSubmitSearchForm(e) {
   e.preventDefault();
-  searchQuery = e.currentTarget.searchQuery.value;
+  searchQuery = e.currentTarget.searchQuery.value.trim();
   currentPage = 1;
-
+  refs.searchForm.reset();
+  
   if (searchQuery === '') {
-    return;
+    return alert('Please enter a valid request');
   }
+  
 
   const response = await fetchImages(searchQuery, currentPage);
   currentHits = response.hits.length;
